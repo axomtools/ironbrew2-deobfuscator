@@ -12,7 +12,7 @@ A tool to reverse IronBrew/AztupBrew obfuscation. converts it back to readable L
 ## Requirements
 
 - Python 3.6+
-- `lua-parser` – see `requirements.txt`
+- `lua-parser` ( see `requirements.txt` ) 
 
 ## Installation
 
@@ -21,3 +21,4 @@ pip install -r requirements.txt
 ```
 
 Main file = ```processor.py```
+input = input.lua (default) 
