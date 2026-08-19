@@ -150,8 +150,8 @@ def refineast(ast, options):
                 if node.get("Type") == "VariableExpr" and "Variable" in node and "Name" in node["Variable"]:
                     name = node["Variable"]["Name"]
                     if name not in rename_map:
-                        rename_map[name] = f"var_{counter}"
                         counter += 1
+                        rename_map[name] = f"v{counter}"
                     node["Variable"]["Name"] = rename_map[name]
                 else:
                     for key, value in node.items():
