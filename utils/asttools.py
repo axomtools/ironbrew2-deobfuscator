@@ -1,6 +1,6 @@
-import lua_parser
-from lua_parser import ast as lua_ast
-import re
+import luaparser
+from luaparser import ast
+from luaparser.astnodes import *
 
 class token:
     def __init__(self, type_, leading_white, source):
@@ -135,7 +135,7 @@ def _convert_node(node):
 
 def loadast(script):
     try:
-        tree = lua_parser.parse(script)
+        tree = ast.parse(script)
         return _convert_node(tree)
     except Exception as e:
         raise RuntimeError(f"Parse error: {e}")
