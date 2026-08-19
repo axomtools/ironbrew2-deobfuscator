@@ -22,3 +22,10 @@ pip install -r requirements.txt
 
 Main file = ```processor.py```
 input = ```input.lua (default)```
+
+# Steps :
+1- ```git clone https://github.com/axomtools/ironbrew2-deobfuscator.git```
+2- ```cd ironbrew2-deobfuscator```
+3- ```pip install -r requirements.txt```
+4- ```python processor.py```
+note : must have "input.lua" which is the obfuscated file (in same directory) 
