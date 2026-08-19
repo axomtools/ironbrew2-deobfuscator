@@ -21,4 +21,4 @@ pip install -r requirements.txt
 ```
 
 Main file = ```processor.py```
-input = input.lua (default) 
+input = ```input.lua (default)```
